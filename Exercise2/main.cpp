@@ -51,32 +51,32 @@ int main()
 	
 	cout << "RISOLUZIONE CON FATTORIZZAZIONE PALU" << endl;
 	Vector2d x1 = PALU(A1,b1);
-	cout << "La soluzione con fattorizzazione PALU del primo problema è:\n" << scientific << setprecision(16)  << x1 << endl;
+	cout << "La soluzione con fattorizzazione PALU del primo problema è:\n" << scientific << setprecision(2)  << x1 << endl;
     cout << "Il suo errore relativo è:\n" << scientific << setprecision(16) << ErrRel(x_sol,x1) << endl;
 	cout << endl;
 	
 	Vector2d x2 = PALU(A2,b2);
-	cout << "La soluzione con fattorizzazione PALU del secondo problema è:\n" << scientific  << setprecision(16) << x2 << endl; 
+	cout << "La soluzione con fattorizzazione PALU del secondo problema è:\n" << scientific  << setprecision(2) << x2 << endl; 
 	cout << "Il suo errore relativo è:\n" << scientific << setprecision(16) << ErrRel(x_sol,x2) << endl;
 	cout << endl;
 	
 	Vector2d x3 = PALU(A3,b3);
-	cout << "La soluzione con fattorizzazione PALU del terzo problema è:\n" << scientific << setprecision(16) << x3 << endl;
+	cout << "La soluzione con fattorizzazione PALU del terzo problema è:\n" << scientific << setprecision(2) << x3 << endl;
 	cout << "Il suo errore relativo è:\n" << scientific << setprecision(16) << ErrRel(x_sol,x3) << endl;
 	
 	cout << "\n" << "RISOLUZIONE CON FATTORIZZAZIONE QR" << endl;
 	Vector2d x1Qr = QR(A1,b1);
-	cout << "La soluzione con fattorizzazione QR del primo problema è:\n" << scientific << setprecision(16) << x1Qr << endl;
+	cout << "La soluzione con fattorizzazione QR del primo problema è:\n" << scientific << setprecision(2) << x1Qr << endl;
 	cout << "Il suo errore relativo è:\n" << scientific << setprecision(16) << ErrRel(x_sol,x1Qr) << endl;
 	cout << endl;
 	
 	Vector2d x2Qr = QR(A2,b2);
-	cout << "La soluzione con fattorizzazione QR del secondo problema è:\n" << scientific << setprecision(16) << x2Qr << endl;
+	cout << "La soluzione con fattorizzazione QR del secondo problema è:\n" << scientific << setprecision(2) << x2Qr << endl;
 	cout << "Il suo errore relativo è:\n" << scientific << setprecision(16) << ErrRel(x_sol,x2Qr) << endl;
 	cout << endl;
 	
 	Vector2d x3Qr = QR(A3,b3);
-	cout << "La soluzione con fattorizzazione QR del terzo problema è:\n" << scientific << setprecision(16) << x3Qr << endl;
+	cout << "La soluzione con fattorizzazione QR del terzo problema è:\n" << scientific << setprecision(2) << x3Qr << endl;
 	cout << "Il suo errore relativo è:\n" << scientific << setprecision(16) << ErrRel(x_sol,x3Qr) << endl;
 	
 	return 0;
